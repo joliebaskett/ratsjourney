@@ -79,6 +79,12 @@ body {
     100% {opacity:100;}
 }
 
+    @-webkit-keyframes onward1 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
 
 
 
@@ -122,6 +128,13 @@ body {
     90% {opacity:0;}
     100% {opacity:100;}
 }
+
+    @-webkit-keyframes onward2 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
 
 #rat {
     left:0px;
@@ -578,6 +591,12 @@ body {
     75% {opacity:0;}
     100% {opacity:100;}
 }
+    @-webkit-keyframes onward4 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
 
 
 
@@ -1472,6 +1491,12 @@ body {
     @keyframes onward5 {
     0%  {opacity:0;}
     80% {opacity:0;}
+    100% {opacity:100;}
+}
+
+    @-webkit-keyframes onward5 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
     100% {opacity:100;}
 }
 
@@ -2834,6 +2859,12 @@ body {
     80% {opacity:0;}
     100% {opacity:100;}
 }
+    @-webkit-keyframes onward6 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
 
 #glow {
     
@@ -3136,6 +3167,12 @@ transform: translatex(-700px) translatey(0px);
     100% {opacity:100;}
 }
 
+    @-webkit-keyframes onward7 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
 
 #book1 {
      position: absolute;
@@ -3423,18 +3460,24 @@ transform: translatex(700px) translatey(-700px);
     
     -webkit-filter: drop-shadow(0px 0px 6px white);
     
-    -webkit-animation-name: onward6; 
+    -webkit-animation-name: onward8; 
     -webkit-animation-duration: 13s;
     -webkit-animation-iteration-count: 1;
     
-    animation-name: onward6;
+    animation-name: onward8;
     animation-duration: 13s;
     animation-iteration-count: 1;
 }
 
-    @keyframes onward6 {
+    @keyframes onward8 {
     0%  {opacity:0;}
     80% {opacity:0;}
+    100% {opacity:100;}
+}
+
+    @-webkit-keyframes onward8 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
     100% {opacity:100;}
 }
 
@@ -3949,6 +3992,12 @@ transform: translatex(-700px) translatey(-700px);
 }
 
     @keyframes onward9 {
+    0%  {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:100;}
+}
+
+    @-webkit-keyframes onward9 {
     0%  {opacity:0;}
     90% {opacity:0;}
     100% {opacity:100;}
