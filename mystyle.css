@@ -482,34 +482,95 @@ body {
 
 
 
-#snake {
+#bug2 {
+    position: absolute;
+    left: -200px;
+    top:90px;
+    z-index: 8; 
+    -ms-transform: rotate(150deg); /* IE 9 */
+    -webkit-transform: rotate(150deg); /* Chrome, Safari, Opera */
+    transform: rotate(150deg);
+    
+    animation-delay: 3s;
+    -webkit-animation-name: bug2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation-name: bug2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bug2 {
+    0%   {left:-400px;}
+    50%  {left:-12px;}
+    100% {left:-400px;}
+}
+
+/* Standard syntax */
+@keyframes bug2 {
+    0%   {left:-400px;}
+    50%  {left:-12px;}
+    100% {left:-400px;}
+}
+
+
+
+.snake {
      position: absolute;
      z-index: 4;
      top:445px;
-     left:20px;
+     left:-200px;
     
-    -webkit-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	transition: all 0.3s linear;   
-    -webkit-animation: snake 5s infinite linear;
+  -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  -moz-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  -ms-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  animation: spin 3000ms linear infinite, moveLeftToRight 8s linear 1;
+  
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  
+  position: absolute;
+
 }
 
-@-webkit-keyframes snake {
-		from {
-				-webkit-transform: rotate(359deg);
-		}
-		to {
-				-webkit-transform: rotate(0deg);
-		}
+/* Spinning the sphere using key frames */
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
 }
 
-@keyframes snake {
-		from {transform: rotate(359deg);
-		}
-		to {transform: rotate(0deg);
-		}
+/* Move sphere from left to right */
+@-moz-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
 }
-
+@-ms-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}
+@keyframes moveLeftToRight {
+  0%   { left: 600px; }
+  100% { left: -300; }
+}
+@-webkit-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}
 
 
 #junglePortal {
