@@ -388,7 +388,7 @@ body {
 .wrapper4 {   
     margin: 0 auto;
     position: relative;
-    background:  linear-gradient(to bottom, #6e846d 0%, #18341b 81%);
+    background:  linear-gradient(to bottom, #585879 0%, #2a223e 81%);
     overflow: hidden;
     max-height: 736px;
     max-width: 414px;
@@ -524,10 +524,10 @@ body {
      top:445px;
      left:-200px;
     
-  -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
-  -moz-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
-  -ms-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
-  animation: spin 3000ms linear infinite, moveLeftToRight 8s linear 1;
+  -webkit-animation: spin 3000ms linear infinite, moveRightToLeft 7s linear 1;
+  -moz-animation: spin 3000ms linear infinite, moveRightToLeft 7s linear 1;
+  -ms-animation: spin 3000ms linear infinite, moveRightToLeft 7s linear 1;
+  animation: spin 3000ms linear infinite, moveRightToLeft 7s linear 1;
   
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -538,38 +538,38 @@ body {
 
 /* Spinning the sphere using key frames */
 @-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg); }
-  to { -ms-transform: rotate(360deg); }
+  from { -ms-transform: rotate(360deg); }
+  to { -ms-transform: rotate(0deg); }
 }
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+  from { -moz-transform: rotate(360deg); }
+  to { -moz-transform: rotate(0deg); }
 }
 @keyframes spin {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
 }
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  from { -webkit-transform: rotate(360deg); }
+  to { -webkit-transform: rotate(0deg); }
 }
 
 /* Move sphere from left to right */
-@-moz-keyframes moveLeftToRight {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+@-moz-keyframes moveRightToLeft {
+  0%   { left: 700px; }
+  100% { left: -300px; }
 }
-@-ms-keyframes moveLeftToRight {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+@-ms-keyframes moveRightToLeft {
+  0%   { left: 700px; }
+  100% { left: -300px; }
 }
-@keyframes moveLeftToRight {
-  0%   { left: 600px; }
-  100% { left: -300; }
+@keyframes moveRightToLeft {
+  0%   { left: 700px; }
+  100% { left: -300px; }
 }
-@-webkit-keyframes moveLeftToRight {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+@-webkit-keyframes moveRightToLeft {
+  0%   { left: 700px; }
+  100% { left: -300px; }
 }
 
 
