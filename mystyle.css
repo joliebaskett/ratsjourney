@@ -264,60 +264,60 @@ body {
 }
 
 
-.bigWheel {
-  z-index:19;
-  display: block;
-  position: absolute;
-  left: -400;
-  top:400px;
- 
-  /* Animation to spin and move the sphere */
-  -webkit-animation: wheel1 3000ms linear infinite, big 7s linear infinite;
-  -moz-animation: wheel1 3000ms linear infinite, big 7s linear infinite;
-  -ms-animation: wheel1 3000ms linear infinite, big 7s linear infinite;
-  animation: wheel1 3000ms linear infinite, big 7s linear infinite;
-  
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  
+
+.vehicle{
+    z-index:12;
+    position: absolute;
+    height:200px;
+    width:400px;
+    top:350px;
+    
+    -webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+    
+    -webkit-animation-name: move; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-
+    -webkit-animation-timing-function: linear; infinite;
+    
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-/* Spinning the sphere using key frames */
-@-ms-keyframes wheel1 {
-  from { -ms-transform: rotate(360deg); }
-  to { -ms-transform: rotate(0deg); }
-}
-@-moz-keyframes wheel1 {
-  from { -moz-transform: rotate(360deg); }
-  to { -moz-transform: rotate(0deg); }
-}
-@keyframes wheel1 {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-@-webkit-keyframes wheel1 {
-  from { -webkit-transform: rotate(360deg); }
-  to { -webkit-transform: rotate(0deg); }
+@keyframes move {
+    from {left: -400px;}
+    to {left: 500px;}
 }
 
-/* Move sphere from left to right */
-@-moz-keyframes big {
-  0%   { left: -600px; }
-  100% { left: 400px; }
-}
-@-ms-keyframes big {
-   0%   { left: -600px; }
-  100% { left: 400px; }
-}
-@keyframes big {
-  0%   { left: -600px; }
-  100% { left: 400px; }
-}
-@-webkit-keyframes big {
-  0%   { left: -600px; }
-  100% { left: 400px; }
+
+#bigWheel {
+    left:-8px;
+    top:23px;
+    z-index:12;
+    position: absolute;
+    animation: rotate 7s linear infinite;
 }
 
+@keyframes rotate{
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+#smallWheel {
+    top:153px;
+    left:285px;
+    z-index:11;
+    position: absolute;
+    animation: rotate 7s linear infinite;
+}
+
+#pennyFarthing {
+    z-index:12;
+    position: absolute;
+}
 
 #tree {
     position: absolute;
