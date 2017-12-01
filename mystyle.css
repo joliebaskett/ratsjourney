@@ -271,6 +271,7 @@ body {
     height:200px;
     width:400px;
     top:350px;
+    left:-400px;
     
     -webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
@@ -278,12 +279,13 @@ body {
     
     -webkit-animation-name: move; 
     -webkit-animation-duration: 5s;
-    -webkit-animation-
+    -webkit-animation-delay: 2s;
     -webkit-animation-timing-function: linear; infinite;
     
     animation-name: move;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+    animation-delay:2s;
     animation-timing-function: linear;
 }
 
@@ -307,8 +309,8 @@ body {
 }
 
 #smallWheel {
-    top:153px;
-    left:285px;
+    top:159px;
+    left:300px;
     z-index:11;
     position: absolute;
     animation: rotate 7s linear infinite;
@@ -2883,7 +2885,7 @@ bubbleBlack{
 #pinkCoral2 {
      position: absolute;
      left: 90px;
-     padding-top: 276px;
+     padding-top: 279px;
      z-index: 13; 
     
     -webkit-transition: all 0.3s linear;
