@@ -113,7 +113,7 @@ body {
 #onward2 {
      position: absolute;
      left: 120px;
-     padding-top: 500px;
+     padding-top: 537px;
      z-index: 21; 
      opacity:100;
     
@@ -255,8 +255,8 @@ body {
 }
 
 #onward3 {
-    padding-top:490px;
-    z-index: 15;
+    padding-top:536px;
+    z-index: 6;
     position: relative;
 
     -webkit-filter: drop-shadow(0px 0px 6px white);
@@ -270,7 +270,7 @@ body {
     position: absolute;
     height:200px;
     width:400px;
-    top:350px;
+    top:400px;
     left:-400px;
     
     -webkit-transition: all 0.3s linear;
@@ -349,33 +349,116 @@ body {
     to {left: -50px;}
 }
 
+@-webkit-keyframes tree {
+    from {left: -90px;}
+    to {left: -50px;}
+}
+
+
 #green {
      position: absolute;
-     left: -30px;
+     left: -50px;
      padding-top: 320px;
      z-index: 5; 
+
+    -webkit-animation-name: green; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    
+    animation-name: green;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
+
+@keyframes green {
+    from {left: -10px;}
+    to {left: -50px;}
+}
+
+@-webkit-keyframes green {
+    from {left: -10px;}
+    to {left: -50px;}
+}
+
 
 #brown {
      position: absolute;
-     left: -30px;
+     left: -50px;
      padding-top: 430px;
      z-index: 4;
+   
+    -webkit-animation-name: brown; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    
+    animation-name: brown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes brown {
+    from {left: -90px;}
+    to {left: -50px;}
+}
+
+@-webkit-keyframes brown {
+    from {left: -90px;}
+    to {left: -50px;}
 }
 
 #brown2 {
      position: absolute;
-     left: -30px;
+     left: -50px;
      padding-top: 560px;
      z-index: 3;
+
+    -webkit-animation-name: brown; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    
+    animation-name: brown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
+@keyframes brown {
+    from {left: -90px;}
+    to {left: -50px;}
+}
+
+@-webkit-keyframes brown {
+    from {left: -90px;}
+    to {left: -50px;}
+}
 
 #road{
      position: absolute;
      left: 200px;
      padding-top: 342px;
      z-index: 7;
+    
+     animation-name: road;
+     animation-duration: 1s;
+    -webkit-animation: road 1 1s ease-in-out;
+}
+
+
+@-webkit-keyframes road{
+    from {
+        transform: scale(0.0);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes road{
+    from {
+        transform: scale(0.0);
+    }
+    to {
+        transform: scale(1.0);
+    }
 }
 
 #trees1 {
@@ -383,6 +466,24 @@ body {
      left: -150px;
      padding-top: 205px;
      z-index: 8;
+
+    -webkit-animation-name: trees1; 
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    
+    animation-name: trees1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes trees1 {
+    from {left: -190px;}
+    to {left: -150px;}
+}
+
+@-webkit-keyframes trees1 {
+    from {left: -190px;}
+    to {left: -150px;}
 }
 
 #trees2 {
@@ -390,6 +491,24 @@ body {
      left: 180px;
      padding-top: 224px;
      z-index: 7;
+
+        -webkit-animation-name: trees2; 
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    
+    animation-name: trees2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes trees2 {
+    from {left: 220px;}
+    to {left: 180px;}
+}
+
+@-webkit-keyframes trees2 {
+    from {left: 220px;}
+    to {left: 180px;}
 }
 
 #bush1 {
@@ -460,7 +579,7 @@ body {
     position:absolute;
     padding: 20px;
     margin: 0 auto;
-    height: 30px;
+    height: 25px;
     width: 200px;
     border: 1px solid white;
     font: 16px Georgia, Garamond, Serif;
@@ -473,7 +592,7 @@ body {
 #onward4 {
      position: relative;
      left: 0px;
-     padding-top: 500px;
+     padding-top: 535px;
      z-index: 21; 
      opacity:100;
     
@@ -547,7 +666,7 @@ body {
     -webkit-transform: rotate(150deg); /* Chrome, Safari, Opera */
     transform: rotate(150deg);
     
-    animation-delay: 3s;
+    animation-delay: 4s;
     -webkit-animation-name: bug2; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
@@ -662,7 +781,7 @@ body {
 }
 
 
-#green2 {
+#green5 {
      position: absolute;
      left: -30px;
      padding-top: 554px;
@@ -1385,7 +1504,7 @@ body {
     position:absolute;
     padding: 20px;
     margin: 0 auto;
-    height: 30px;
+    height: 25px;
     width: 200px;
     border: 1px solid white;
     font: 16px Georgia, Garamond, Serif;
@@ -1397,7 +1516,7 @@ body {
 #onward5 {
      position: relative;
      left: px;
-     padding-top: 500px;
+     padding-top: 535px;
      z-index: 21; 
      opacity:100;
     
@@ -2767,7 +2886,7 @@ body {
     position:absolute;
     padding: 20px;
     margin: 0 auto;
-    height: 30px;
+    height: 25px;
     width: 200px;
     border: 1px solid white;
     font: 16px Georgia, Garamond, Serif;
@@ -2779,7 +2898,7 @@ body {
 #onward6 {
      position: relative;
      left: px;
-     padding-top: 450px;
+     padding-top: 535px;
      z-index: 21; 
      opacity:100;
     
@@ -3177,7 +3296,7 @@ transform: translatex(-700px) translatey(0px);
     position:absolute;
     padding: 20px;
     margin: 0 auto;
-    height: 30px;
+    height: 25px;
     width: 200px;
     border: 1px solid white;
     font: 16px Georgia, Garamond, Serif;
@@ -3244,7 +3363,7 @@ transform: translatex(0px) translatey(150px);
 #onward7 {
      position: relative;
      left: 0px;
-     padding-top: 500px;
+     padding-top: 535px;
      z-index: 21; 
      opacity:100;
     
@@ -3556,7 +3675,7 @@ transform: translatex(700px) translatey(-700px);
     position:absolute;
     padding: 20px;
     margin: 0 auto;
-    height: 30px;
+    height: 25px;
     width: 200px;
     border: 0px solid #f8e38b;
     font: 16px Georgia, Garamond, Serif;
@@ -3568,7 +3687,7 @@ transform: translatex(700px) translatey(-700px);
 #onward8 {
      position: relative;
      left: px;
-     padding-top: 450px;
+     padding-top: 360px;
      z-index: 21; 
      opacity:100;
     
@@ -4222,7 +4341,7 @@ transform: translatex(0px) translatey(-350px);
 #onward9 {
      position: relative;
      left: px;
-     padding-top: 500px;
+     padding-top: 536px;
      z-index: 21; 
      opacity:100;
     
@@ -4273,6 +4392,67 @@ transform: translatex(0px) translatey(-350px);
      padding-top: 570px;
      z-index: 21;
 }
+
+#green2 {
+     position: absolute;
+     left: -50px;
+     padding-top: 320px;
+     z-index: 5; 
+}
+
+
+#brown3 {
+     position: absolute;
+     left: -50px;
+     padding-top: 430px;
+     z-index: 4;
+}
+
+#brown4 {
+     position: absolute;
+     left: -50px;
+     padding-top: 560px;
+     z-index: 3;
+}
+
+#road2{
+     position: absolute;
+     left: 200px;
+     padding-top: 342px;
+     z-index: 7;
+}
+
+#trees3 {
+     position: absolute;
+     left: -150px;
+     padding-top: 205px;
+     z-index: 8;
+}
+
+#trees4 {
+    position: absolute;
+     left: 180px;
+     padding-top: 224px;
+     z-index: 7;
+}
+
+#bush3 {
+     position: absolute;
+     left: -80px;
+     padding-top: 550px;
+     z-index: 21;
+}
+
+#bush4 {  
+     position: absolute;
+     left: 250px;
+     padding-top: 550px;
+     z-index: 21;
+}
+
+
+
+
 
 #ratComplete {
     left:110px;
@@ -4329,7 +4509,7 @@ transform: translatex(0px) translatey(-350px);
 #return {
      position: relative;
      left: 0px;
-     padding-top: 100px;
+     padding-top: 98px;
      z-index: 21; 
      opacity:100;
     
