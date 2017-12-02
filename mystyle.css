@@ -278,12 +278,12 @@ body {
 	transition: all 0.3s linear;
     
     -webkit-animation-name: move; 
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-delay: 1s;
     -webkit-animation-timing-function: linear; infinite;
     
     animation-name: move;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-delay:1s;
     animation-timing-function: linear;
@@ -317,8 +317,13 @@ body {
 }
 
 #pennyFarthing {
+    top:-100px;
+    left:90px;
     z-index:12;
     position: absolute;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
 }
 
 #tree {
