@@ -2,43 +2,18 @@ p {
     font-size:14px;
 }
 
-h1 {
-  padding-top:100px;
-  text-align: center;
-  color: white;
-  font-size: 55px;
-  font-family: snell roundhand, cursive;
-}
-
-
-h2 {
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  font-family: avantgarde, sans-serif;
-  padding-bottom: 20px;
-  font-weight: 200;
-}
-
-
-h3 {
-  padding-top: -20px;
-  text-align: center;
-  color:gray;
-  font-size: 20px;
-  font-family: avantgarde, sans-serif;
-  padding-bottom: 20px;
-  font-weight: 100;
-  font-style: italic;
-}
-
 
 body {
   background-color: #22243e;
   text-align: center;
 }
 
+#pennyFarthing1 {
 
+    z-index:12;
+    position: absolute;
+
+}
 
 
 /* -----------page 1-------------- */
@@ -4517,11 +4492,11 @@ transform: translatex(0px) translatey(-350px);
     -webkit-filter: drop-shadow(0px 0px 6px white);
     
     -webkit-animation-name: return; 
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: 1;
     
     animation-name: return;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
 }
 
