@@ -9,10 +9,8 @@ body {
 }
 
 #pennyFarthing1 {
-
     z-index:12;
     position: absolute;
-
 }
 
 
@@ -95,11 +93,11 @@ body {
     -webkit-filter: drop-shadow(0px 0px 6px white);
     
     -webkit-animation-name: onward2; 
-    -webkit-animation-duration: 18s;
+    -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: 1;
     
     animation-name: onward2;
-    animation-duration: 18s;
+    animation-duration: 10s;
     animation-iteration-count: 1;
 }
 
